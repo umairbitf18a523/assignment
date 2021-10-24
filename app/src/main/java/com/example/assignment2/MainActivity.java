@@ -31,6 +31,31 @@ public class MainActivity extends AppCompatActivity {
                 int c=Integer.parseInt(Text3.getText().toString());
                 int d=Integer.parseInt(Text4.getText().toString());
 
+                int z=a+d;
+
+                if(z<73500 && b==0 && c== 0)
+                {
+                    TextView.setText("0");
+                }
+
+                else if(z==0 && b<7.5 && c== 0)
+                {
+                    TextView.setText("0");
+                }
+
+                else if(z==0 && b==0 && c<52.5)
+                {
+                    TextView.setText("0");
+                }
+                else
+                    {
+                        int g=b*112000;
+                        int s=c*1400;
+                        int zakat=a+g+s+d;
+                        Double per= zakat*0.025;
+
+                        TextView.setText(Double.toString(per));
+                    }
 
             }
         });
