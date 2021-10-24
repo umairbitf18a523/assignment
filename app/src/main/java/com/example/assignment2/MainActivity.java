@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
         TextView TextView= (TextView) findViewById((R.id.textView));
         Button result=(Button) findViewById(R.id.button);
 
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+
+            }
+        });
     }
 }
