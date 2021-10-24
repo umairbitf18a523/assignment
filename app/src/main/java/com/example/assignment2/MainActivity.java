@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int a=Integer.parseInt(Text1.getText().toString());
+                int b=Integer.parseInt(Text2.getText().toString());
+                int c=Integer.parseInt(Text3.getText().toString());
+                int d=Integer.parseInt(Text4.getText().toString());
 
 
             }
